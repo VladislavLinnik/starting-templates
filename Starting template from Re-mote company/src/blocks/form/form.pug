@@ -1,0 +1,7 @@
+mixin form(modifier)
+  form.form&attributes(attributes)
+    h2.text-center.mb-30 Форма
+    input.input(type="text", placeholder="Имя")
+    input.input(type="email", placeholder="Email")
+    textarea.input.input--textarea(placeholder="Сообщение")
+    button.button.mt-10(type="submit") Отправить

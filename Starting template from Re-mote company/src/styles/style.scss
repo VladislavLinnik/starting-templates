@@ -1,0 +1,28 @@
+@import 'bootstrap';
+@import 'mixins';
+
+
+/* Plugins */
+@import 'plugins/plugins-rewrite';
+
+
+/* Global styles */
+@import 'global/global-fonts';
+@import 'global/global-typo';
+@import 'global/global-scaffolding';
+
+
+/* Blocks */
+
+@import './src/blocks/header/header';
+@import './src/blocks/button/button';
+@import './src/blocks/front/front';
+@import './src/blocks/item/item';
+@import './src/blocks/picture/picture';
+@import './src/blocks/review/review';
+@import './src/blocks/slider/slider';
+@import './src/blocks/form/form';
+@import './src/blocks/input/input';
+@import './src/blocks/footer/footer';
+@import './src/blocks/socials/socials';
+@import './src/blocks/logo/logo';

@@ -1,0 +1,9 @@
+mixin item(header, dscr, modifier)
+  a.item(href="#")&attributes(attributes)
+    .item__picture(style="background-image: url(./img/item.jpg);")
+    .item__content
+      .item__content-top
+        h3= header
+        p= dscr
+      .item__date 01.01.2018
+      

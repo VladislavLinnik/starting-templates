@@ -1,0 +1,39 @@
+// Fonts
+@font-face {
+    font-family: 'MyFont';
+    src: url('../fonts/myfont.eot');
+    src: url('../fonts/myfont.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/myfont.woff') format('woff'),
+      url('../fonts/myfont.ttf') format('truetype'),
+      url('../fonts/myfont.svg#webfont') format('svg');
+}
+
+
+
+// Common
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+html {
+    -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fff;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    /*word-break: break-all;*/
+    /*word-wrap: break-word;*/
+}
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 10px;
+}

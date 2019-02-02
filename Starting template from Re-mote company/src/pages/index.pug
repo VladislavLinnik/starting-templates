@@ -1,0 +1,37 @@
+extends ../templates/template.pug
+block content
+  +header
+  +front
+  .container.mt-60
+    .row
+      .col-lg-4.col-sm-6.d-flex
+        +item('Sed ut perspiciatis', 'Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
+      .col-lg-4.col-sm-6.d-flex
+        +item('Ut enim ad minima veniam, quis nostrum', 'Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium omnis iste natus error')
+      .col-lg-4.col-sm-6.d-flex
+        +item('Sed ut perspiciatis', 'Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
+      .col-lg-4.col-sm-6.d-flex
+        +item('Sed ut perspiciatis', 'Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
+      .col-lg-4.col-sm-6.d-flex
+        +item('Ut enim ad minima veniam, quis nostrum', 'Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium omnis iste natus error')
+      .col-lg-4.col-sm-6.d-flex
+        +item('Sed ut perspiciatis', 'Unde omnis iste natus error sit voluptatem accusantium doloremque laudantium')
+  .container.mt-40.mb-70
+    h2.text-center.mb-30 Галерея
+    .row
+      .col-md-4
+        +picture
+      .col-md-4
+        +picture
+      .col-md-4
+        +picture
+  .container
+    .row
+      .col-lg-6.mx-auto
+        h2.text-center.mb-50 Отзывы
+        +slider
+  .container
+    .row
+      .col-lg-4.col-sm-8.mx-auto
+        +form
+  +footer

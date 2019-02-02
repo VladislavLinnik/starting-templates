@@ -1,0 +1,16 @@
+.front {
+  
+  /* Пример медиа-запроса. Подробнее здесь: https://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints */
+
+  @include media-breakpoint-down(md) {
+//    min-height: 0;
+  }
+  
+  &__content {
+    
+  }
+  
+  &__dscr {
+    
+  }
+}

@@ -1,0 +1,22 @@
+/* Slick */
+
+.slick-dots {
+  
+  li {
+    
+    & + li {
+      
+    }
+    
+    &.slick-active {
+      
+      button {
+        
+      }
+    }
+    
+    button {
+      
+    }
+  }
+}

@@ -1,0 +1,26 @@
+/* monitors and laptops */
+@media screen and (min-width: 1240px)  {
+	
+}
+
+/* tablet */
+@media screen and (max-width: 1240px)  {
+	
+}
+
+@media screen and (max-width: 1024px) {
+	
+}
+
+/* mobile */
+@media screen and (max-width: 768px) {
+	
+}
+
+@media screen and (max-width: 460px) {
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+	
+}
