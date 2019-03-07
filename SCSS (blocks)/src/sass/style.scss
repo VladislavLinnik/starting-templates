@@ -1,0 +1,14 @@
+// settings
+@import 'settings/mixins';
+
+@import 'settings/reset';
+
+@import 'settings/common';
+
+// main
+@import 'header';
+
+@import 'footer';
+
+// media-queries
+@import 'media';
