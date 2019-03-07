@@ -1,0 +1,39 @@
+<div class="tabs">
+ 
+    <ul class="tabs__caption">
+        <li class="active">1-я вкладка</li>
+        <li>2-я вкладка</li>
+    </ul>
+   
+    <div class="tabs__content active">
+        Содержимое первого блока
+    </div>
+   
+    <div class="tabs__content">
+        Содержимое второго блока
+    </div>
+   
+</div>
+
+<style>
+.tabs__content {
+  display: none; /* по умолчанию прячем все блоки */
+}
+.tabs__content.active {
+  display: block; /* по умолчанию показываем нужный блок */
+}
+</style>
+
+<script>
+(function($) {
+    $(function() {
+ 
+        $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+            $(this)
+                .addClass('active').siblings().removeClass('active')
+                .closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+        });
+ 
+    });
+})(jQuery);
+</script>
