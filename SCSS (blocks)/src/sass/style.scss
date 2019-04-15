@@ -1,14 +1,13 @@
-// settings
 @import 'settings/mixins';
 
 @import 'settings/reset';
 
 @import 'settings/common';
 
-// main
-@import 'header';
 
-@import 'footer';
+@import 'blocks/header';
 
-// media-queries
+@import 'blocks/footer';
+
+
 @import 'media';
