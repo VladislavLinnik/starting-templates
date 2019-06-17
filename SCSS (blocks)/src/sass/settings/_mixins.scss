@@ -1,0 +1,21 @@
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+@mixin visually-hidden {
+    margin: -1px;
+    padding: 0;
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    border: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0,0,0,0);
+    overflow: hidden;
+}
