@@ -1,0 +1,7 @@
+yarn install
+yarn start
+
+Работать в папке app
+pug + scss
+
+билдит всё в build

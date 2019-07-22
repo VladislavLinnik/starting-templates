@@ -1,0 +1,7 @@
+@import '../../node_modules/normalize.css/normalize.css';
+@import 'help/variables'; // Переменные
+@import 'help/fonts'; // Шрифты
+@import 'help/mixins'; // Миксины
+@import 'help/basic'; // Basic
+@import '../blocks/**/*';
+@import 'pages/**/*';

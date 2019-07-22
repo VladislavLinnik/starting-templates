@@ -1,0 +1,171 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+em,
+img,
+strong,
+sub,
+sup,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+* {
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Proxima Nova';
+}
+
+.overflow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	transition: all .3s ease-in-out;
+}
+
+a:hover,
+a:active,
+a:focus {
+	text-decoration: none;
+}
+
+input {
+	border: none;
+	background-color: transparent;
+	outline: none;
+	-webkit-appearance: none;
+
+	&::placeholder {
+
+		@media screen and (max-width: 768px) {}
+	}
+
+	&:focus {
+		background-color: #555e65;
+
+		&::placeholder {}
+	}
+}
+
+textarea {
+	resize: vertical;
+	border: none;
+	background-color: transparent;
+	outline: none;
+	-webkit-appearance: none;
+
+	&::placeholder {}
+
+	&:focus {
+
+		&::placeholder {}
+	}
+}
+
+button {
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+	transition: all 0.3s ease-in-out;
+	outline: none;
+	-webkit-appearance: none;
+}
+
+
+.wrapper {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background-image: url('../images/wrap-bg.jpg');
+	background-position: top;
+	background-color: #212529;
+	background-repeat: no-repeat;
+
+	@media screen and (max-width: 1024px) {}
+
+	@media screen and (max-width: 1500px) {}
+}
+
+.container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.main-hover {
+	&:hover {
+		box-shadow: 0px 1px 9px 0px rgba(192, 0, 255, 0.83);
+	}
+}
+
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+
+	.gradient {
+		color: #fff !important;
+		background: transparent !important;
+	}
+}
