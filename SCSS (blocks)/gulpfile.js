@@ -1,14 +1,14 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
-    concat = require('gulp-concat'),
+    sassGlob = require('gulp-sass-glob'),
     autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('styles',function(){
     return gulp.src('./src/sass/style.+(scss|sass)')
-                .pipe(concat('style.css'))
                 .pipe(autoprefixer({
                     browsers: ['> 0.1%']
                 }))
+                .pipe(sassGlob())
                 .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
                 .pipe(gulp.dest('./app/css/'))
 });
