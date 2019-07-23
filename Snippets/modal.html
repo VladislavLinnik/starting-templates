@@ -2,23 +2,8 @@
 <div class="popup_overlay"></div>
 <div class="popup">
     <div class="popup_content">
-        <span class="popup_content-heading">Upload New File</span>
-        <form action="#">
-            <div class="file-field input-field">
-                <div class="btn">
-                <span>File</span>
-                <input type="file">
-                </div>
-                <div class="file-path-wrapper">
-                <input class="file-path validate" type="text" placeholder="Choose file">
-                </div>
-            </div>
-        </form>
-    </div>
 
-    <div class="popup__footer">
-        <button class="popup_upload-close popup-close">Cancel</button>
-        <button class="popup_upload-submit" type="submit">Submit</button>
+        <button class="popup__close">x</button>
     </div>
 </div>
 <!-- popup end -->
@@ -27,7 +12,7 @@
 
 
 // popup
-.popup_overlay {
+.popup__overlay {
     display: none;
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
@@ -37,15 +22,11 @@
     top: 0;
     left: 0;
   }
-  .popup {
-    // padding: 10px;
+.popup {
     display: none;
     position: fixed;
-    // width: 60%;
-    // height: 100vh;
     min-width: 450px;
     z-index: 999;
-    // top: 66px;
     top: 50%;
     left: 50%;
     background: #fff;
@@ -55,48 +36,14 @@
     transform: translate(-50%, -50%);
     overflow-y: auto;
 
-    &_content {
+    &__content {
         padding: 32px 26px 40px 40px;
-
-        &-heading {
-            display: block;
-            font-family: 'RobotoBold';
-            font-size: 21px;
-            color: #697b8c;
-            margin-bottom: 35px;
-        }
     }
 
-    &__footer {
-        display: flex;
-        justify-content: space-between;
+    &__close {
 
-        .popup_upload-close,
-        .popup_upload-submit {
-            width: 50%;
-            padding: 20px 0;
-            font-family: "RobotoRegular";
-            text-align: center;
-            font-size: 21px;
-            border: none;
-            cursor: pointer;
-        }
-        .popup_upload-close {
-            background-color: #f8f8f8;
-            color: #000;
-        }
-        .popup_upload-submit {
-            background-color: #034ea1;
-            color: #fff;
-        }
     }
-  }
-  .popup_title {
-    padding: 10px;
-    font-size: 24px;
-    text-align: center;
-    font-weight: bold;
-  }
+}
 
 
 
