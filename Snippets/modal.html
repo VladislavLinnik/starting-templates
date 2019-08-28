@@ -49,10 +49,17 @@
 
 // popup
 $(function(){
-  $('.addNewClient').click(function(){
+  $('.openBtn').click(function(){
     $('.popup, .popup__overlay').fadeIn(400); //показываем всплывающее окно
   });
   $('.popup__close, .popup__overlay').click(function(){
-    $('.popup, .popup_o_verlay').fadeOut(400); //скрываем всплывающее окно
+    $('.popup, .popup__overlay').fadeOut(400); //скрываем всплывающее окно
+  });
+  
+  
+  $(document).on('keyup', function(e) {
+  	if (e.key === "Escape") { // отслеживаем нажатие по escape
+        $('.popup, .popup__overlay').fadeOut(400);
+    }
   });
 });
