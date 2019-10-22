@@ -16,5 +16,7 @@ gulp.task('styles',function(){
 gulp.task('default', ['styles']);
 
 gulp.task('watch', function(){
-    gulp.watch('./src/sass/**/*.scss', ['default']);
+    gulp.watch('./src/sass/**/*.scss', function(event, cb) {
+        setTimeout(function(){gulp.start('styles');},500) // задача выполниться через 500 миллисекунд и файл успеет сохраниться на диске
+    });
 });
